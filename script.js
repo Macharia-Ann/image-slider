@@ -2,6 +2,16 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
 
+  // autoplay
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -13,4 +23,4 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-});
+})
